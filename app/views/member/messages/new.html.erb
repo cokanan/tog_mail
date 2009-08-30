@@ -19,13 +19,13 @@
                 <%= I18n.t("tog_mail.member.select") %>
              </option>
              <optgroup label="<%= I18n.t("tog_mail.member.friends") %>">
-                <%= options_from_collection_for_select(@from.profile.friends, "id", "full_name") %>
+                <%= options_from_collection_for_select(@from.profile.friends, "user_id", "full_name") %>
              </optgroup>
              <optgroup label="<%= I18n.t("tog_mail.member.followers") %>">
-                <%= options_from_collection_for_select(@from.profile.followers, "id", "full_name") %>
+                <%= options_from_collection_for_select(@from.profile.followers, "user_id", "full_name") %>
              </optgroup>
              <optgroup label="<%= I18n.t("tog_mail.member.followings") %>">
-                <%= options_from_collection_for_select(@from.profile.followings, "id", "full_name") %>
+                <%= options_from_collection_for_select(@from.profile.followings, "user_id", "full_name") %>
              </optgroup>
           </select>
         <% end %>
